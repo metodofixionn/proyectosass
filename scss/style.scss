@@ -4,141 +4,221 @@
 @import url('https://fonts.googleapis.com/css2?family=Titan+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=El+Messiri:wght@600&display=swap');
 
+$colorPrimario: rgba(0, 53, 122, 0.811);
+$colorPrimarioOpacidad: rgba(0, 53, 122, 0.511);
+$colorSecundario: rgba(0, 184, 184,0.900);
+$colorTerciario: rgba(88, 0, 191,0.900);
+$bordesRedondeados: 10px;
+$bordesRedondeadosGrande: 200px;
+$fondo: linear-gradient(156.8deg,  rgba(30,144,231,0.500) 27.1%, rgba(67,101,225,0.500) 77.8%); 
+$fontFamilyPrincipal: "El+Messiri:wght" ;
+$fontSizeTitulos: 50px;
+$colorLetraCards: white;
+$colorLetrasBtn: white;
+$textomobile: 15px;
+$textotablet: 25px;
+$textopc: 45px;
+$hoverlinks: scale(0.9,0.9);
+
 *{
     margin: 0%;
     padding: 0%;
     box-sizing: border-box; 
 }
 .fondo {
-    background-image: linear-gradient(156.8deg,  rgba(30,144,231,0.500) 27.1%, rgba(67,101,225,0.500) 77.8%);
-    font-family: "El+Messiri:wght" ;  
+    background-image: $fondo;
+    font-family: $fontFamilyPrincipal;   
 }
 .navbar {
-    border-radius: 10px;
-}
-.navbar-nav a{
-    color: rgba(0, 53, 122, 0.811);
-    font-weight: bolder;
-    font-family: "El+Messiri:wght";
-    font-size: 15px;
+    border-radius: $bordesRedondeados;
+    img{
+        &:hover{
+            transform: $hoverlinks;
+        }
+    }
+    a{
+        color: $colorPrimario;
+        font-weight: bolder;
+        font-family: $fontFamilyPrincipal;
+        font-size: 15px;
+        &:hover {
+            transform: $hoverlinks;
+            color: $colorSecundario;
+        }
+    }   
 }
 .header {
-    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(0, 53, 122, 0.811) 30%, rgba(0, 53, 122, 0.511) 70.2%);
-    border-radius: 10px;
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  $colorPrimario 30%, $colorPrimarioOpacidad 70.2%);
+    border-radius: $bordesRedondeados;
+    h1 {
+        font-size: $fontSizeTitulos;
+        color: $colorPrimario;
+    }
+    img {
+        &:hover {
+            transform: $hoverlinks;
+        }
+    }
 }
-.titulo {
-    font-size: 60px;
-}  
 .card {
-    color: white;
+    color: $colorLetraCards ;
+    background-color: $colorPrimario;
 } 
-
 .btn {
-    color: white;
+    color: $colorLetrasBtn;
     font-weight: bold;
 }
 /*configuraciones generales*/
-
 .tarjetaIndex{
     position: relative;
+    .card-body{
+        position: absolute;
+        background-color: rgba(1,1,1,0.1);
+        font-weight:500;
+        p{
+            font-size: $textomobile;
+            font-family: $fontFamilyPrincipal;
+        }
+    }
 }
-.bodyIndex {
-    position: absolute;
-    background-color: rgba(1,1,1,0.1);
+.tarjetaIndexSecundaria {
+    border-radius: $bordesRedondeados;
+    p{
+        font-size: $textomobile;
+        color: $colorPrimario;
+    }
 }
-.pTextPrincipal {
-    font-size: 15px;
-    font-family: "Permanent+Marker&display=swap";
-}
-
-.imgEstrategias {
-    border-radius:10px ;
-}
-.fondoCard {
-    border-radius: 10px;
-}
-.imgMetodoX {
-    border-radius: 10px;
-}
-.CardTitleIndex{
-    font-size: 15px;
-    color:rgba(0, 53, 122, 0.811);
-}
-
 .carousel {
-        border-radius: 15px;
+    border-radius: $bordesRedondeados;
+        .carousel-inner{
+            img {
+                border-radius: $bordesRedondeados;
+                opacity: 0.8;
+            }
+        }
+    .carousel-item {
+        position: relative;
+    }
+    .carousel-caption {
+        position: absolute; 
+        top: 5%;
+        z-index: 1;
+        font-weight: bold; 
+    }
+        
 }
-
-.carousel-inner img {
-    border-radius: 15px;
-    opacity: 0.8;
-}
-
-.carousel-item {
-    position: relative;
-}
-
-.carousel-caption {
-    position: absolute; 
-    top: 5%;
-    z-index: 1;
-    font-weight: bold; 
-}
-
 /*hasta aca index*/
-
-.tituloMetodox {
-    color:rgba(0, 53, 122, 0.811);
-    font-weight: bolder;
-}
 .cardMetodoX {
-    border-radius: 10px;
+    border-radius: $bordesRedondeados;
     border: 1px solid white;
-    padding: 15px;
+    padding: 20px;
+    img{
+        margin: 15px
+    }
+    .tituloMetodox {
+        color:$colorPrimario;
+        font-weight: bolder;
+    }
 }
-
 /* hasta aca metodoX*/
-
 .cardNosotros {
-    border-bottom: 10px ridge rgba(0, 53, 122, 0.911);
-    border-radius: 10px;
+    border-bottom: 10px ridge $colorPrimario;
+    border-radius: $bordesRedondeados;
+    font-family: $fontFamilyPrincipal;
+    .fotoNosotros {
+        border-radius: $bordesRedondeadosGrande;
+    }
+    h2{
+        color: $colorPrimario;
+        font-weight: bolder;
+    }
+    h3 {
+        color: $colorPrimario;
+        font-weight: bolder;
+    }
+    p{
+        color: white;
+        font-weight:500;
+        font-size: $textomobile;
+    }
+    img{    
+        margin: 10px;
+    }
 }
-.fotoNosotros {
-    border-radius: 200px;
-}
-
 /* hasta aca nosotros*/
-
 .fondoFooter{
-    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(0, 53, 122, 0.811) 30%, rgba(0, 53, 122, 0.511) 70.2%);
-    border-radius: 10px;
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  $colorPrimario 30%, $colorPrimarioOpacidad 70.2%);
+    border-radius: $bordesRedondeados;
     color: white;
+    font-family: $fontFamilyPrincipal;
+    p{
+        text-transform:uppercase;
+    }
+    ul{
+        li{
+            a{
+                text-decoration: none;
+                color: white;
+                &:hover {
+                    color: $colorSecundario;
+                }
+            }
+        }
+    }
+    img{
+        &:hover{
+            transform: $hoverlinks;
+        }
+    }
+    .imgSobre{
+        width: 30px;
+        &:hover {
+            transform: $hoverlinks;
+        }
+    }
+    .pieCopyrigth {
+        background: rgba(1,1,1,0.3);
+    }
 }
 
-.imgSobre{
-    width: 30px;
-}
-.pieCopyrigth {
-    background: rgba(1,1,1,0.3);
-}
+
 /*Hasta aca footer*/
-
-
 @media (min-width:768px) {
-    .pTextPrincipal {
-        font-size: 35px;
+    .tarjetaIndex{
+        .card-body{
+            p{
+                font-size: $textotablet;
+            }
+        }
+        }
+        .tarjetaIndexSecundaria {
+        p{
+            font-size: $textotablet;
+        }   
     }
-    .CardTitleIndex{
-        font-size: 35px;
-    }
-
 }
 @media (min-width:992px) {
-    .pTextPrincipal {
-        font-size: 55px;
+        .tarjetaIndex{
+            .card-body{
+                p{
+                    font-size: $textopc;
+                }   
+            }
+        }
+    .tarjetaIndexSecundaria {    
+        p{
+            font-size: $textopc;
+        }
     }
-    .CardTitleIndex{
-        font-size: 55px;
-    }
-
+    .cardNosotros { 
+        h2{
+        font-size: $textopc;
+        }
+        p{
+            font-size: $textotablet;
+        }
+    } 
 }
+
+
+
