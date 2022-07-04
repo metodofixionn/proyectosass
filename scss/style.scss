@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Philosopher:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Philosopher:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titan+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=El+Messiri:wght@600&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box; 
+}
+.fondo {
+    background-image: linear-gradient(156.8deg,  rgba(30,144,231,0.500) 27.1%, rgba(67,101,225,0.500) 77.8%);
+    font-family: "El+Messiri:wght" ;  
+}
+.navbar {
+    border-radius: 10px;
+}
+.navbar-nav a{
+    color: rgba(0, 53, 122, 0.811);
+    font-weight: bolder;
+    font-family: "El+Messiri:wght";
+    font-size: 15px;
+}
+.header {
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(0, 53, 122, 0.811) 30%, rgba(0, 53, 122, 0.511) 70.2%);
+    border-radius: 10px;
+}
+.titulo {
+    font-size: 60px;
+}  
+.card {
+    color: white;
+} 
+
+.btn {
+    color: white;
+    font-weight: bold;
+}
+/*configuraciones generales*/
+
+.tarjetaIndex{
+    position: relative;
+}
+.bodyIndex {
+    position: absolute;
+    background-color: rgba(1,1,1,0.1);
+}
+.pTextPrincipal {
+    font-size: 15px;
+    font-family: "Permanent+Marker&display=swap";
+}
+
+.imgEstrategias {
+    border-radius:10px ;
+}
+.fondoCard {
+    border-radius: 10px;
+}
+.imgMetodoX {
+    border-radius: 10px;
+}
+.CardTitleIndex{
+    font-size: 15px;
+    color:rgba(0, 53, 122, 0.811);
+}
+
+.carousel {
+        border-radius: 15px;
+}
+
+.carousel-inner img {
+    border-radius: 15px;
+    opacity: 0.8;
+}
+
+.carousel-item {
+    position: relative;
+}
+
+.carousel-caption {
+    position: absolute; 
+    top: 5%;
+    z-index: 1;
+    font-weight: bold; 
+}
+
+/*hasta aca index*/
+
+.tituloMetodox {
+    color:rgba(0, 53, 122, 0.811);
+    font-weight: bolder;
+}
+.cardMetodoX {
+    border-radius: 10px;
+    border: 1px solid white;
+    padding: 15px;
+}
+
+/* hasta aca metodoX*/
+
+.cardNosotros {
+    border-bottom: 10px ridge rgba(0, 53, 122, 0.911);
+    border-radius: 10px;
+}
+.fotoNosotros {
+    border-radius: 200px;
+}
+
+/* hasta aca nosotros*/
+
+.fondoFooter{
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(0, 53, 122, 0.811) 30%, rgba(0, 53, 122, 0.511) 70.2%);
+    border-radius: 10px;
+    color: white;
+}
+
+.imgSobre{
+    width: 30px;
+}
+.pieCopyrigth {
+    background: rgba(1,1,1,0.3);
+}
+/*Hasta aca footer*/
+
+
+@media (min-width:768px) {
+    .pTextPrincipal {
+        font-size: 35px;
+    }
+    .CardTitleIndex{
+        font-size: 35px;
+    }
+
+}
+@media (min-width:992px) {
+    .pTextPrincipal {
+        font-size: 55px;
+    }
+    .CardTitleIndex{
+        font-size: 55px;
+    }
+
+}
