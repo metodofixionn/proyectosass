@@ -24,8 +24,7 @@
     background-image: radial-gradient( circle farthest-corner at 10% 20%,  $colorPrimario 30%, $colorPrimarioOpacidad 70.2%);
     border-radius: $bordesRedondeados;
     h1 {
-        font-size: $fontSizeTitulos;
-        color: $colorPrimario;
+        @include fontColor ($fontSizeTitulos,$colorPrimario);
     }
     img {
         &:hover {
@@ -40,7 +39,7 @@
 
 .btnf {
     border-radius: $bordesRedondeados;
-    padding: 5px;
+    padding: 3px 3px;
     color: $colorLetrasBtn;
     font-weight: bold;
     text-align: center;
