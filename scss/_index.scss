@@ -1,0 +1,40 @@
+.tarjetaIndex{
+    position: relative;
+    .tarjetaBody{
+        position: map-get($position , position);
+        top: map-get($position , top);
+        z-index: map-get($position , index);
+        font-weight:map-get($position , weight);
+        color: $colorLetraCards;
+        background-color: rgba(0,53,122,0.3);
+        p{
+            font-size: $textomobile;
+            font-family: $fontFamilyPrincipal;
+        }
+    }
+}
+.tarjetaIndexSecundaria {
+    p{
+        font-size: $textomobile;
+        color: $colorPrimario;
+    }
+    
+}
+.carousel {
+        .carousel-inner{
+            img {
+                opacity: 0.8;
+            }
+        }
+    .carousel-item {
+        position: relative;
+    }
+    .carousel-caption {
+        color: $colorPrimario;
+        position: map-get($position , position);
+        top: map-get($position , top);
+        z-index: map-get($position , index);
+        font-weight:map-get($position , weight);
+    }
+        
+}

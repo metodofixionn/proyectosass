@@ -1,0 +1,124 @@
+.fondo {
+    background-image: $fondo;
+    font-family: $fontFamilyPrincipal;   
+}
+.navbar {
+    border-radius: $bordesRedondeados;
+    img{
+        &:hover{
+            transform: $hoverlinks;
+        }
+    }
+    a{
+        color: map-get($navA , color);
+        font-family: map-get($navA , family);
+        font-size: map-get($navA , size);
+        font-weight: map-get($navA , weight);
+        &:hover {
+            transform: $hoverlinks;
+            color: $colorSecundario;
+        }
+    }   
+}
+.header {
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  $colorPrimario 30%, $colorPrimarioOpacidad 70.2%);
+    border-radius: $bordesRedondeados;
+    h1 {
+        font-size: $fontSizeTitulos;
+        color: $colorPrimario;
+    }
+    img {
+        &:hover {
+            transform: $hoverlinks;
+        }
+    }
+}
+.card {
+    color: $colorLetraCards ;
+    background-color: $colorPrimario;
+} 
+
+.btnf {
+    border-radius: $bordesRedondeados;
+    padding: 5px;
+    color: $colorLetrasBtn;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    &:hover{
+        transform: $hoverlinks;
+        background-color: transparent;
+        color: $colorPrimario;
+        border:1px solid $colorPrimario;
+    }
+}
+
+.btnf-primario {
+    @extend .btnf;
+    background-color: $colorPrimario;
+
+}
+
+.btnf-secundario {
+    @extend .btnf;
+    background-color: $colorSecundario;
+}
+
+.btnf-terciario {
+    @extend .btnf;
+    background-color: $colorTerciario;
+}
+
+.btn {
+    color: $colorLetrasBtn;
+    font-weight: bold;
+}
+
+
+.fondoFooter{
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  $colorPrimario 30%, $colorPrimarioOpacidad 70.2%);
+    border-radius: $bordesRedondeados;
+    color: $colorLetraCards;
+    font-family: $fontFamilyPrincipal;
+    p{
+        text-transform:uppercase;
+    }
+    .slogan{
+        a{
+            text-decoration: none;
+            color:$colorLetraCards;
+            &:hover {
+                color: $colorSecundario;
+                font-weight: bold;
+            }
+        }
+        
+    }
+    ul{
+        li{
+            a{
+                text-decoration: none;
+                color: $colorLetraCards;
+                &:hover {
+                    color: $colorSecundario;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+    img{
+        &:hover{
+            transform: $hoverlinks;
+        }
+    }
+    .imgSobre{
+        width: 30px;
+        &:hover {
+            transform: $hoverlinks;
+        }
+    }
+    .pieCopyrigth {
+        background: rgba(1,1,1,0.3);
+    }
+}

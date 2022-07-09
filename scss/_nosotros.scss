@@ -1,0 +1,23 @@
+.cardNosotros {
+    border-bottom: 10px ridge $colorPrimario;
+    font-family: $fontFamilyPrincipal;
+    .fotoNosotros {
+        border-radius: $bordesRedondeadosGrande;
+    }
+    .textNosotros{
+        color: $colorPrimario;
+        font-weight: 500;
+    }
+    h3 {
+        color: $colorPrimario;
+        font-weight: 500;
+    }
+    p{
+        color: $colorLetraCards;
+        font-weight:500;
+        font-size: $textomobile;
+    }
+    img{    
+        margin: 10px;
+    }
+}
