@@ -4,11 +4,7 @@
 }
 .navbar {
     border-radius: $bordesRedondeados;
-    img{
-        &:hover{
-            transform: $hoverlinks;
-        }
-    }
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  $colorPrimario 30%, $colorPrimarioOpacidad 70.2%);
     a{
         color: map-get($navA , color);
         font-family: map-get($navA , family);
@@ -21,14 +17,18 @@
     }   
 }
 .header {
-    background-image: radial-gradient( circle farthest-corner at 10% 20%,  $colorPrimario 30%, $colorPrimarioOpacidad 70.2%);
-    border-radius: $bordesRedondeados;
+    color: $colorPrimario;
+    font-family: $fontFamilyPrincipal;
+    -webkit-box-shadow: 3px 3px 3px 3px rgba(0,33,122,1);
+    -moz-box-shadow: 3px 3px 3px 3px rgba(0,33,122,1);
+    box-shadow: 3px 3px 3px 3px rgba(0,33,122,1);
     h1 {
         @include fontColor ($fontSizeTitulos,$colorPrimario);
     }
     img {
         &:hover {
             transform: $hoverlinks;
+            font-weight: bold;
         }
     }
 }

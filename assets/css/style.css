@@ -9,34 +9,37 @@
   font-family: "El+Messiri:wght"; }
 
 .navbar {
-  border-radius: 10px; }
-  .navbar img:hover {
-    transform: scale(0.9, 0.9); }
+  border-radius: 10px;
+  background-image: radial-gradient(circle farthest-corner at 10% 20%, rgba(0, 33, 122, 0.811) 30%, rgba(0, 53, 122, 0.711) 70.2%); }
   .navbar a {
-    color: rgba(0, 53, 122, 0.811);
+    color: white;
     font-family: "El+Messiri:wght";
     font-size: 15px;
-    font-weight: 600; }
+    font-weight: 500; }
     .navbar a:hover {
       transform: scale(0.9, 0.9);
       color: rgba(0, 184, 184, 0.9); }
 
 .header {
-  background-image: radial-gradient(circle farthest-corner at 10% 20%, rgba(0, 53, 122, 0.811) 30%, rgba(0, 53, 122, 0.711) 70.2%);
-  border-radius: 10px; }
+  color: rgba(0, 33, 122, 0.811);
+  font-family: "El+Messiri:wght";
+  -webkit-box-shadow: 3px 3px 3px 3px #00217a;
+  -moz-box-shadow: 3px 3px 3px 3px #00217a;
+  box-shadow: 3px 3px 3px 3px #00217a; }
   .header h1 {
-    font-size: 45px;
-    color: rgba(0, 53, 122, 0.811); }
+    font-size: 36px;
+    color: rgba(0, 33, 122, 0.811); }
   .header img:hover {
-    transform: scale(0.9, 0.9); }
+    transform: scale(0.9, 0.9);
+    font-weight: bold; }
 
 .card {
   color: white;
-  background-color: rgba(0, 53, 122, 0.811); }
+  background-color: rgba(0, 33, 122, 0.811); }
 
 .btnf, .btnf-primario, .btnf-secundario, .btnf-terciario {
   border-radius: 10px;
-  padding: 5px;
+  padding: 3px 3px;
   color: white;
   font-weight: bold;
   text-align: center;
@@ -45,11 +48,11 @@
   .btnf:hover, .btnf-primario:hover, .btnf-secundario:hover, .btnf-terciario:hover {
     transform: scale(0.9, 0.9);
     background-color: transparent;
-    color: rgba(0, 53, 122, 0.811);
-    border: 1px solid rgba(0, 53, 122, 0.811); }
+    color: rgba(0, 33, 122, 0.811);
+    border: 1px solid rgba(0, 33, 122, 0.811); }
 
 .btnf-primario {
-  background-color: rgba(0, 53, 122, 0.811); }
+  background-color: rgba(0, 33, 122, 0.811); }
 
 .btnf-secundario {
   background-color: rgba(0, 184, 184, 0.9); }
@@ -62,7 +65,7 @@
   font-weight: bold; }
 
 .fondoFooter {
-  background-image: radial-gradient(circle farthest-corner at 10% 20%, rgba(0, 53, 122, 0.811) 30%, rgba(0, 53, 122, 0.711) 70.2%);
+  background-image: radial-gradient(circle farthest-corner at 10% 20%, rgba(0, 33, 122, 0.811) 30%, rgba(0, 53, 122, 0.711) 70.2%);
   border-radius: 10px;
   color: white;
   font-family: "El+Messiri:wght"; }
@@ -98,13 +101,13 @@
     font-weight: 500;
     color: white;
     background-color: rgba(0, 53, 122, 0.3); }
-    .tarjetaIndex .tarjetaBody p {
+    .tarjetaIndex .tarjetaBody h2 {
       font-size: 15px;
       font-family: "El+Messiri:wght"; }
 
-.tarjetaIndexSecundaria p {
+.tarjetaIndexSecundaria h3 {
   font-size: 15px;
-  color: rgba(0, 53, 122, 0.811); }
+  color: rgba(0, 33, 122, 0.811); }
 
 .carousel .carousel-inner img {
   opacity: 0.8; }
@@ -113,7 +116,7 @@
   position: relative; }
 
 .carousel .carousel-caption {
-  color: rgba(0, 53, 122, 0.811);
+  color: rgba(0, 33, 122, 0.811);
   position: absolute;
   top: 0;
   z-index: 1;
@@ -127,19 +130,19 @@
   .cardMetodoX img {
     margin: 15px; }
   .cardMetodoX .tituloMetodox {
-    color: rgba(0, 53, 122, 0.811);
+    color: rgba(0, 33, 122, 0.811);
     font-weight: bolder; }
 
 .cardNosotros {
-  border-bottom: 10px ridge rgba(0, 53, 122, 0.811);
+  border-bottom: 10px ridge rgba(0, 33, 122, 0.811);
   font-family: "El+Messiri:wght"; }
   .cardNosotros .fotoNosotros {
     border-radius: 150px; }
   .cardNosotros .textNosotros {
-    color: rgba(0, 53, 122, 0.811);
+    color: rgba(0, 33, 122, 0.811);
     font-weight: 500; }
   .cardNosotros h3 {
-    color: rgba(0, 53, 122, 0.811);
+    color: rgba(0, 33, 122, 0.811);
     font-weight: 500; }
   .cardNosotros p {
     color: white;
@@ -149,19 +152,19 @@
     margin: 10px; }
 
 @media (min-width: 768px) {
-  .tarjetaIndex .tarjetaBody p {
-    font-size: 25px; }
-  .tarjetaIndexSecundaria p {
-    font-size: 25px; } }
+  .tarjetaIndex .tarjetaBody h2 {
+    font-size: 20px; }
+  .tarjetaIndexSecundaria h3 {
+    font-size: 20px; } }
 
 @media (min-width: 992px) {
-  .tarjetaIndex .tarjetaBody p {
-    font-size: 40px; }
-  .tarjetaIndexSecundaria p {
-    font-size: 40px; }
+  .tarjetaIndex .tarjetaBody h2 {
+    font-size: 30px; }
+  .tarjetaIndexSecundaria h3 {
+    font-size: 30px; }
   .cardNosotros h3 {
-    font-size: 40px; }
+    font-size: 30px; }
   .cardNosotros .textPrincipal {
-    font-size: 25px; }
+    font-size: 20px; }
   .cardNosotros p {
-    font-size: 25px; } }
+    font-size: 20px; } }

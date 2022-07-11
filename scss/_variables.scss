@@ -1,4 +1,4 @@
-$colorPrimario: rgba(0, 53, 122, 0.811);
+$colorPrimario: rgba(0, 33, 122, 0.811);
 $colorPrimarioOpacidad: rgba(0, 53, 122, 0.711);
 $colorSecundario: rgba(0, 184, 184,0.900);
 $colorTerciario: rgba(88, 0, 191,0.900); 
@@ -6,25 +6,25 @@ $bordesRedondeados: 10px;
 $bordesRedondeadosGrande: 150px;
 $fondo: linear-gradient(156.8deg,  rgba(30,144,231,0.500) 27.1%, rgba(67,101,225,0.500) 77.8%); 
 $fontFamilyPrincipal: "El+Messiri:wght" ;
-$fontSizeTitulos: 45px;
+$fontSizeTitulos: 36px;
 $colorLetraCards: white;
 $colorLetrasBtn: white;
 $textomobile: 15px;
-$textotablet: 25px;
-$textopc: 40px;
+$textotablet: 20px;
+$textopc: 30px;
 $hoverlinks: scale(0.9,0.9);
-$coloresbtn: (azul: rgba(0,53,122,0.811),aqua: rgba(0,184,184,0.900),violeta: rgba(88,0,191,0.900));    
+$coloresbtn: (azul: rgba(0,33,122,0.811),aqua: rgba(0,184,184,0.900),violeta: rgba(88,0,191,0.900));    
 $navA:(
-    color: $colorPrimario,
+    color: white,
     family: $fontFamilyPrincipal,
     size: 15px,
-    weight: 600
+    weight: 500
 );
 $position: (
     position: absolute,
     top: 0,
     index: 1,
-    weigth: 500,
+    weight: 500,
 );
 
 @mixin fontColor ($size,$color){

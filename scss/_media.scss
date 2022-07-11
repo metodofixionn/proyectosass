@@ -1,13 +1,13 @@
 @media (min-width:768px) {
     .tarjetaIndex{
         .tarjetaBody{
-            p{
+            h2{
                 font-size: $textotablet;
             }
         }
         }
         .tarjetaIndexSecundaria {
-        p{
+        h3{
             font-size: $textotablet;
         }   
     }
@@ -15,13 +15,13 @@
 @media (min-width:992px) {
         .tarjetaIndex{
             .tarjetaBody{
-                p{
+                h2{
                     font-size: $textopc;
                 }   
             }
         }
     .tarjetaIndexSecundaria {    
-        p{
+        h3{
             font-size: $textopc;
         }
     }

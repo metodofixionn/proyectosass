@@ -7,14 +7,14 @@
         font-weight:map-get($position , weight);
         color: $colorLetraCards;
         background-color: rgba(0,53,122,0.3);
-        p{
+        h2{
             font-size: $textomobile;
             font-family: $fontFamilyPrincipal;
         }
     }
 }
 .tarjetaIndexSecundaria {
-    p{
+    h3{
         font-size: $textomobile;
         color: $colorPrimario;
     }

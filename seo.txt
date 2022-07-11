@@ -1,0 +1,9 @@
+SEO
+
+Aplicacion de Alt en Img
+Mejoria en la estructura de las H en todas las paginas del sitio
+Cambios en 4 H1 por el nombre correcto de la pag (Todos menos en el INDEX)
+Agregue descripcion a cada paginagit a
+Afinacion de contenido, reemplace todos los lorem pendientes en Pagina Nosotros
+Visualizacion correcta de los URL
+Conectividad entre sus paginas de forma correcta
